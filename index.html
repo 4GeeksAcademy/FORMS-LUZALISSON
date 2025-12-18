@@ -29,34 +29,33 @@
                         </div>
                         <div class="row d-flex mt-3">
                             <fieldset class="col-md-5">
-                                <form>
-                                    <div class="mb-2">
-                                        <label for="card" class="form-label text-start d-block">Card #</label>
-                                        <input type="text" inputmode="numeric" pattern="[0-9]{5,6}" maxlength="6"
-                                            class="form-control" id="FirstName"
-                                            placeholder="XXXXXXXXXXXXXXXXXXXXXXXXXXXX">
-                                    </div>
-                                </form>
+
+                                <div class="mb-2">
+                                    <label for="card" class="form-label text-start d-block">Card #</label>
+                                    <input type="text" inputmode="numeric" pattern="[0-9]{5,6}" maxlength="6"
+                                        class="form-control" id="FirstName" placeholder="XXXXXXXXXXXXXXXXXXXXXXXXXXXX">
+                                </div>
+
                             </fieldset>
                             <fieldset class="col-md-3">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="cvc" class="form-label text-start d-block">CVC #</label>
-                                        <input type="number" class="form-control" id="cvc" placeholder="00000">
-                                    </div>
-                                </form>
+
+                                <div class="mb-3">
+                                    <label for="cvc" class="form-label text-start d-block">CVC #</label>
+                                    <input required type="number" class="form-control" id="cvc" placeholder="00000">
+                                </div>
+
                             </fieldset>
                             <fieldset class="col-md-4">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="amount" class="form-label text-start d-block">Amount</label>
-                                        <div class="input-group">
-                                            <span class="fw-bold">$</span>
-                                            <input type="text" class="form-control" id="amount">
-                                        </div>
 
+                                <div class="mb-3">
+                                    <label for="amount" class="form-label text-start d-block">Amount</label>
+                                    <div class="input-group">
+                                        <span class="fw-bold">$</span>
+                                        <input required type="text" class="form-control" id="amount">
                                     </div>
-                                </form>
+
+                                </div>
+
                             </fieldset>
                         </div>
                     </div>
@@ -65,152 +64,126 @@
                     <div class="left col-md-6">
                         <!--First Name-->
                         <fieldset>
-                            <form>
-                                <div class="mb-2">
-                                    <label for="FirstName" class="form-label text-start d-block">First Name</label>
-                                    <input type="text" class="form-control" id="FirstName">
-                                </div>
-                            </form>
+
+                            <div class="mb-2">
+                                <label for="FirstName" class="form-label text-start d-block">First Name</label>
+                                <input required type="text" class="form-control" id="FirstName">
+                            </div>
+
                         </fieldset>
                         <!--City-->
                         <fieldset>
-                            <form>
-                                <div class="mb-2">
-                                    <label for="City" class="form-label text-start d-block">City</label>
-                                    <input type="text" class="form-control" id="City">
-                                </div>
-                            </form>
+
+                            <div class="mb-2">
+                                <label for="City" class="form-label text-start d-block">City</label>
+                                <input type="text" class="form-control" id="City">
+                            </div>
+
                         </fieldset>
                         <!--We Accept:-->
                         <fieldset>
-                            <form>
-                                <div class="col-md-5">
-                                    <label for="weaccept" class="form-label text-start d-block mt-2 mb-4">We
-                                        accept:</label>
-                                    <div
-                                        class="d-flex border-secondary-subtle bg-secondary form-select-color-seconda rounded-1 p-2 ">
-                                        <div class="form-check mx-2">
-                                            <input class="form-check-input" type="radio" name="radioDefault"
-                                                id="radioDefault1">
-                                            <label class="form-check-label" for="radioDefault1">
-                                                <i class="fa-brands fa-cc-mastercard"></i>
-                                            </label>
-                                        </div>
-                                        <div class="form-check mx-2">
-                                            <input class="form-check-input" type="radio" name="radioDefault"
-                                                id="radioDefault2" checked>
-                                            <label class="form-check-label" for="radioDefault2">
-                                                <i class="fa-brands fa-cc-visa"></i>
-                                            </label>
-                                        </div>
-                                        <div class="form-check mx-2">
-                                            <input class="form-check-input" type="radio" name="radioDefault"
-                                                id="radioDefault2" checked>
-                                            <label class="form-check-label" for="radioDefault3">
-                                                <i class="fa-brands fa-cc-diners-club"></i>
-                                            </label>
-                                        </div>
-                                        <div class="form-check mx-2">
-                                            <input class="form-check-input" type="radio" name="radioDefault"
-                                                id="radioDefault2" checked>
-                                            <label class="form-check-label" for="radioDefault4">
-                                                <i class="fa-regular fa-credit-card"></i>
-                                            </label>
-                                        </div>
 
+                            <div class="col-md-5">
+                                <label for="weaccept" class="form-label text-start d-block mt-2 mb-4">We
+                                    accept:</label>
+                                <div
+                                    class="d-flex border-secondary-subtle bg-secondary form-select-color-seconda rounded-1 p-2 ">
+                                    <div class="form-check mx-2">
+                                        <input class="form-check-input" type="radio" name="radioDefault"
+                                            id="radioDefault1">
+                                        <label class="form-check-label" for="radioDefault1">
+                                            <i class="fa-brands fa-cc-mastercard"></i>
+                                        </label>
                                     </div>
+                                    <div class="form-check mx-2">
+                                        <input class="form-check-input" type="radio" name="radioDefault"
+                                            id="radioDefault2" checked>
+                                        <label class="form-check-label" for="radioDefault2">
+                                            <i class="fa-brands fa-cc-visa"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check mx-2">
+                                        <input class="form-check-input" type="radio" name="radioDefault"
+                                            id="radioDefault2" checked>
+                                        <label class="form-check-label" for="radioDefault3">
+                                            <i class="fa-brands fa-cc-diners-club"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check mx-2">
+                                        <input class="form-check-input" type="radio" name="radioDefault"
+                                            id="radioDefault2" checked>
+                                        <label class="form-check-label" for="radioDefault4">
+                                            <i class="fa-regular fa-credit-card"></i>
+                                        </label>
+                                    </div>
+
                                 </div>
-                            </form>
+                            </div>
+
                         </fieldset>
                     </div>
                     <div class="right col-md-6">
                         <!--Last Name-->
                         <fieldset>
-                            <form>
-                                <div class="mb-2">
-                                    <label for="LastName" class="form-label text-start d-block">Last Name</label>
-                                    <input type="text" class="form-control" id="LastName">
-                                </div>
-                            </form>
+
+                            <div class="mb-2">
+                                <label for="LastName" class="form-label text-start d-block">Last Name</label>
+                                <input type="text" class="form-control" id="LastName">
+                            </div>
+
                         </fieldset>
 
                         <!--Stale / Postal Code-->
                         <div class="row d-flex">
                             <fieldset class="col-md-6">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="State" class="form-label text-start d-block">State</label>
-                                        <select class="form-select" aria-label="Default select example"
-                                            aria-placeholder="Pick a state">
-                                            <option selected disabled>Pick a state</option>
-                                            <option value="1">Single</option>
-                                            <option value="2">Married</option>
-                                            <option value="3">Divorced</option>
-                                        </select>
-                                    </div>
-                                </form>
+
+                                <div class="mb-3">
+                                    <label for="State" class="form-label text-start d-block">State</label>
+                                    <select class="form-select" aria-label="Default select example"
+                                        aria-placeholder="Pick a state">
+                                        <option selected disabled>Pick a state</option>
+                                        <option value="1">Single</option>
+                                        <option value="2">Married</option>
+                                        <option value="3">Divorced</option>
+                                    </select>
+                                </div>
+
                             </fieldset>
 
                             <fieldset class="col-md-6">
-                                <form>
-                                    <div class="mb-2">
-                                        <label for="PostalCode" class="form-label text-start d-block">Postal
-                                            Code</label>
-                                        <input type="number" class="form-control" id="FirstName">
-                                    </div>
-                                </form>
+
+                                <div class="mb-2">
+                                    <label for="PostalCode" class="form-label text-start d-block">Postal
+                                        Code</label>
+                                    <input required type="number" class="form-control" id="FirstName">
+                                </div>
+
                             </fieldset>
                         </div>
 
                         <!--Message-->
                         <fieldset>
-                            <form>
-                                <div class="mb-2">
-                                    <label for="Message" class="form-label text-start d-block">Message</label>
-                                    <div class="form-floating">
-                                        <textarea class="form-control h-100" id="floatingTextarea"></textarea>
-                                    </div>
-                                    <label for="Addanynoteshere"
-                                        class="form-label text-start d-block text-body-secondary mt-2">Add any notes
-                                        here.</label>
+
+                            <div class="mb-2">
+                                <label for="Message" class="form-label text-start d-block">Message</label>
+                                <div class="form-floating">
+                                    <textarea class="form-control h-100" id="floatingTextarea"></textarea>
                                 </div>
-                            </form>
+                                <label for="Addanynoteshere"
+                                    class="form-label text-start d-block text-body-secondary mt-2">Add any notes
+                                    here.</label>
+                            </div>
+
                         </fieldset>
                     </div>
                 </div>
                 <!--FOORTER DEL FORM-->
                 <div class="card-footer text-body-secondary d-flex justify-content-end p-3">
                     <button type="reset" class="btn btn-secondary btn-md mx-1">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" input-requiered class="btn btn-primary">Submit</button>
                 </div>
+
         </form>
-
-
-
-
-
-
-
-
-
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="reset" class="btn btn-primary">reset</button>
-        </form>
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
